@@ -26,6 +26,14 @@ Tabela: `contatos`
 | nome     | text    |
 | telefone | text    |
 
+```sql
+CREATE TABLE contatos (
+    id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    nome TEXT NOT NULL,
+    telefone TEXT NOT NULL
+);
+```
+
 ## Variáveis de Ambiente
 
 Crie um arquivo `.env`:
