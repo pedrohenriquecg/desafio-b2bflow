@@ -1,22 +1,11 @@
 """Application entry point."""
 
-from src.supabase_client import get_contacts
+from src.message_sender import send_messages
 
 
 def main() -> None:
     """Run the application."""
-    contacts = get_contacts()
-
-    if not contacts:
-        print("Nenhum contato encontrado.")
-        return
-
-    print("Contatos encontrados:")
-
-    for contact in contacts:
-        print(f"Nome: {contact['nome']}")
-        print(f"Telefone: {contact['telefone']}")
-        print("-" * 30)
+    send_messages()
 
 
 if __name__ == "__main__":
