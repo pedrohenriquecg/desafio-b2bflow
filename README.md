@@ -1,2 +1,7 @@
-# desafio-b2bflow
-Desafio técnico - Integração Python, Supabase e Z-API
+# Desafio b2bflow
+
+## Tecnologias
+- Python
+- Supabase
+- Z-API
+
